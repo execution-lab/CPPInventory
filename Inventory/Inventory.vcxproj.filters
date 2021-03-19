@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\item\item.cpp" />
+    <ClCompile Include="src\inventory.cpp" />
+    <ClCompile Include="src\item\symcard.cpp" />
+    <ClCompile Include="src\inventorycell.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\item\item.h" />
+    <ClInclude Include="src\item\itemtype.h" />
+    <ClInclude Include="src\inventory.h" />
+    <ClInclude Include="src\item\symcard.h" />
+    <ClInclude Include="src\inventorycell.h" />
+  </ItemGroup>
+</Project>
