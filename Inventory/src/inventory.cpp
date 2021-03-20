@@ -25,6 +25,7 @@ bool Inventory::remove(ItemType itemType)
 {
 	for (auto &i : m_cells)
 	{
+		// Если нашли объект - удаляем
 		if (i.getItem()->getType() == itemType)
 		{
 			i.remove();
