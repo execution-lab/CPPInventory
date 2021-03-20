@@ -3,6 +3,7 @@
 InventoryCell::InventoryCell(const InventoryCell &cell)
 {
 	m_item = cell.m_item->clone();
+	m_count = cell.m_count;
 }
 
 bool InventoryCell::add(const std::unique_ptr<Item> &item, int count)
