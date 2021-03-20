@@ -17,4 +17,5 @@ public:
 
 private:
 	std::unique_ptr<Item> m_item;
+	int m_count;
 };
