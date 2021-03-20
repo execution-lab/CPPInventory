@@ -65,3 +65,19 @@ size_t Inventory::getFreeSlot()
 
 	return slot;
 }
+
+size_t Inventory::getItemSlot(ItemType itemType)
+{
+	size_t slot = INVALID_INVENTORY_CELL;
+
+	for (size_t i = 0; i < MAX_INVENTORY_CELL; i++)
+	{
+		if (m_cells.at(i).getItem()->getType() == itemType)
+		{
+			slot = i;
+			break;
+		}
+	}
+
+	return slot;
+}

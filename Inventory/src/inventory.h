@@ -17,6 +17,7 @@ public:
 	bool remove(ItemType itemType);
 	float getWeight();
 	size_t getFreeSlot();
+	size_t getItemSlot(ItemType itemType);
 
 private:
 	std::vector<InventoryCell> m_cells;
