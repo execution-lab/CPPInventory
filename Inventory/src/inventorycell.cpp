@@ -33,7 +33,7 @@ bool InventoryCell::remove()
 	return 0;
 }
 
-Item * InventoryCell::getItem()
+Item * InventoryCell::getItem() const
 {
 	return m_item.get();
 }
