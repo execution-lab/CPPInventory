@@ -5,11 +5,13 @@ InventoryCell::InventoryCell(const InventoryCell &cell)
 	m_item = cell.m_item->clone();
 }
 
-bool InventoryCell::add(std::unique_ptr<Item> &item, int count)
+bool InventoryCell::add(const std::unique_ptr<Item> &item, int count)
 {
 	if (item && !m_item)
 	{
-		m_item = std::move(item);
+		std::unique_ptr<Item> curret_item = item->clone();
+
+		m_item = std::move(curret_item);
 
 		return 1;
 	}

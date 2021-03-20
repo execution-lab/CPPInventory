@@ -13,7 +13,7 @@ class Inventory
 public:
 	Inventory();
 
-	bool add(std::unique_ptr<Item> item, int count);
+	bool add(const std::unique_ptr<Item> &item, int count);
 	bool remove(ItemType itemType);
 	float getWeight();
 	size_t getFreeSlot();

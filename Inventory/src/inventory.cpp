@@ -5,7 +5,7 @@ Inventory::Inventory()
 	m_cells.resize(MAX_INVENTORY_CELL);
 }
 
-bool Inventory::add(std::unique_ptr<Item> item, int count = 1)
+bool Inventory::add(const std::unique_ptr<Item> &item, int count = 1)
 {
 	if (m_cells.size() >= MAX_INVENTORY_CELL)
 	{
