@@ -12,6 +12,7 @@ bool InventoryCell::add(const std::unique_ptr<Item> &item, int count)
 		std::unique_ptr<Item> curret_item = item->clone();
 
 		m_item = std::move(curret_item);
+		m_count = count;
 
 		return 1;
 	}
