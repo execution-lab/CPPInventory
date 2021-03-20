@@ -15,6 +15,7 @@ public:
 
 	bool add(std::unique_ptr<Item> item, int count);
 	bool remove(ItemType itemType);
+	float getWeight();
 	size_t getFreeSlot();
 
 private:

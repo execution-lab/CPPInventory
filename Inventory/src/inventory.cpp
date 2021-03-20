@@ -12,7 +12,7 @@ bool Inventory::add(std::unique_ptr<Item> item, int count = 1)
 		size_t free_slot = getFreeSlot();
 		if (free_slot != INVALID_INVENTORY_CELL)
 		{
-			m_cells.at(free_slot).add(item);
+			m_cells.at(free_slot).add(item, count);
 		}
 
 		return 1;
@@ -35,6 +35,18 @@ bool Inventory::remove(ItemType itemType)
 	}
 
 	return 0;
+}
+
+float Inventory::getWeight()
+{
+	float weight = 0.0f;
+
+	for (auto &i : m_cells)
+	{
+		weight += i.getItem()->getWeight();
+	}
+
+	return weight;
 }
 
 
