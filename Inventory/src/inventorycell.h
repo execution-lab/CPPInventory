@@ -11,7 +11,7 @@ public:
 	~InventoryCell() { }
 	InventoryCell(const InventoryCell &);
 
-	bool add(std::unique_ptr<Item> &item);
+	bool add(std::unique_ptr<Item> &item, int count);
 	bool remove();
 	Item * getItem();
 

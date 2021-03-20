@@ -5,7 +5,7 @@ InventoryCell::InventoryCell(const InventoryCell &cell)
 	m_item = cell.m_item->clone();
 }
 
-bool InventoryCell::add(std::unique_ptr<Item> &item)
+bool InventoryCell::add(std::unique_ptr<Item> &item, int count)
 {
 	if (item && !m_item)
 	{
