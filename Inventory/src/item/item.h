@@ -1,12 +1,11 @@
 #pragma once
 #include "itemtype.h"
+#include "constants.h"
 
 #include <string>
 #include <memory>
 
 using namespace std;
-
-constexpr int MAX_ITEMS = 10;
 
 class Item
 {

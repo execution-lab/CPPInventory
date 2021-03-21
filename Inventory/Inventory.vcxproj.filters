@@ -13,5 +13,6 @@
     <ClInclude Include="src\inventory.h" />
     <ClInclude Include="src\item\symcard.h" />
     <ClInclude Include="src\inventorycell.h" />
+    <ClInclude Include="src\constants.h" />
   </ItemGroup>
 </Project>

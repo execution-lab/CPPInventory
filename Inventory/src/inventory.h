@@ -2,11 +2,10 @@
 
 #include "inventorycell.h"
 #include "item/itemtype.h"
+#include "constants.h"
 
 #include <vector>
 
-constexpr int MAX_INVENTORY_CELL = 10;
-constexpr int INVALID_INVENTORY_CELL = -1;
 
 class Inventory
 {
