@@ -72,7 +72,8 @@ size_t Inventory::getItemSlot(ItemType itemType)
 
 	for (size_t i = 0; i < MAX_INVENTORY_CELL; i++)
 	{
-		if (m_cells.at(i).getItem()->getType() == itemType)
+		if (m_cells.at(i).getItem() != nullptr && 
+			m_cells.at(i).getItem()->getType() == itemType)
 		{
 			slot = i;
 			break;
