@@ -37,3 +37,8 @@ Item * InventoryCell::getItem() const
 {
 	return m_item.get();
 }
+
+int InventoryCell::getCount()
+{
+	return m_count;
+}

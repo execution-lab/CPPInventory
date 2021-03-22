@@ -14,6 +14,7 @@ public:
 	bool add(const std::unique_ptr<Item> &item, int count);
 	bool remove();
 	Item * getItem() const;
+	int getCount();
 
 private:
 	std::unique_ptr<Item> m_item;

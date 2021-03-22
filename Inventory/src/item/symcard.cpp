@@ -7,7 +7,7 @@ Items::Symcard::Symcard(const Symcard& symcard) :
 }
 
 Items::Symcard::Symcard() :
-	Item("Сим-Карта", ItemType::ITEM_TYPE_PHONE, 0.5f, false)
+	Item("Сим-Карта", ItemType::ITEM_TYPE_PHONE, 0.5f, false, 10)
 {
 
 }

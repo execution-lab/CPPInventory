@@ -1,7 +1,8 @@
 #include "item.h"
 
-Item::Item(std::string name, ItemType itemType, float weight, bool isCombination) :
-	m_name(name), m_itemType(itemType), m_weight(weight), m_isCombination(isCombination)
+Item::Item(std::string name, ItemType itemType, float weight, bool isCombination, int limit) :
+	m_name(name), m_itemType(itemType), m_weight(weight), m_isCombination(isCombination),
+	m_limit(limit)
 {
 
 }

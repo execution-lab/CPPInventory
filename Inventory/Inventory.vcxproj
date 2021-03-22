@@ -133,6 +133,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\constants.h" />
+    <ClInclude Include="src\inventoryadditemerror.h" />
     <ClInclude Include="src\inventorycell.h" />
     <ClInclude Include="src\inventory.h" />
     <ClInclude Include="src\item\item.h" />
