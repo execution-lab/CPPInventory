@@ -6,6 +6,7 @@
     <ClCompile Include="src\inventory.cpp" />
     <ClCompile Include="src\item\symcard.cpp" />
     <ClCompile Include="src\inventorycell.cpp" />
+    <ClCompile Include="src\core.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\item\item.h" />
@@ -15,5 +16,6 @@
     <ClInclude Include="src\inventorycell.h" />
     <ClInclude Include="src\constants.h" />
     <ClInclude Include="src\inventoryadditemerror.h" />
+    <ClInclude Include="src\core.h" />
   </ItemGroup>
 </Project>

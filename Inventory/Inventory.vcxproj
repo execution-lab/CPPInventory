@@ -125,6 +125,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\core.cpp" />
     <ClCompile Include="src\inventorycell.cpp" />
     <ClCompile Include="src\inventory.cpp" />
     <ClCompile Include="src\item\item.cpp" />
@@ -133,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\constants.h" />
+    <ClInclude Include="src\core.h" />
     <ClInclude Include="src\inventoryadditemerror.h" />
     <ClInclude Include="src\inventorycell.h" />
     <ClInclude Include="src\inventory.h" />
