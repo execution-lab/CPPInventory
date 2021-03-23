@@ -5,17 +5,24 @@ Inventory::Inventory()
 	m_cells.resize(MAX_INVENTORY_CELL);
 }
 
-bool Inventory::add(const std::unique_ptr<Item> &item, int count = 1)
+bool Inventory::add(const std::unique_ptr<Item> &item, int amount = 1)
 {
-	if (m_cells.size() >= MAX_INVENTORY_CELL)
+	InventoryAddItemError result = isAddItem(item, amount, INVALID_INVENTORY_CELL);
+	if (result == InventoryAddItemError::SUCCESS)
 	{
-		size_t free_slot = getFreeSlot();
-		if (free_slot != INVALID_INVENTORY_CELL)
+		size_t slot = INVALID_INVENTORY_CELL;
+
+		if (item->isCombination())
 		{
-			m_cells.at(free_slot).add(item, count);
+			slot = getItemSlot(item->getType());
 		}
 
-		return 1;
+		if (slot == INVALID_INVENTORY_CELL)
+		{
+			slot = getFreeSlot();
+		}
+
+		m_cells.at(slot).add(item, amount);
 	}
 
 	return 0;
