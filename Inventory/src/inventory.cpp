@@ -125,7 +125,7 @@ InventoryAddItemError Inventory::isAddItem(const std::unique_ptr<Item> &item, in
 		}
 	}
 
-	if ((m_cells.at(slot).getCount() + amount) > getItemCount(item->getType()))
+	if ((getItemCount(item->getType()) + amount) > item->getLimit())
 	{
 		return InventoryAddItemError::AMOUNT_LIMITED;
 	}

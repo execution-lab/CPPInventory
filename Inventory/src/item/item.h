@@ -20,6 +20,7 @@ public:
 	ItemType getType();
 	float getWeight();
 	bool isCombination();
+	int getLimit();
 
 private:
 	std::string m_name;

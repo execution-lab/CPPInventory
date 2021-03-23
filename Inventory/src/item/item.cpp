@@ -27,3 +27,8 @@ bool Item::isCombination()
 	return m_isCombination;
 }
 
+int Item::getLimit()
+{
+	return m_limit;
+}
+
