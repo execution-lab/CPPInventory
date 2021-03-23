@@ -23,15 +23,12 @@ bool Inventory::add(const std::unique_ptr<Item> &item, int count = 1)
 
 bool Inventory::remove(ItemType itemType)
 {
-	for (auto &i : m_cells)
+	size_t slot = getItemSlot(itemType);
+	if (slot != MAX_INVENTORY_CELL)
 	{
-		// Если нашли объект - удаляем
-		if (i.getItem()->getType() == itemType)
-		{
-			i.remove();
+		m_cells.at(slot).remove();
 
-			return 1;
-		}
+		return 1;
 	}
 
 	return 0;
