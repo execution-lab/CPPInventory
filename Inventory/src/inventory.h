@@ -6,6 +6,7 @@
 #include "inventoryadditemerror.h"
 
 #include <vector>
+#include <memory>
 
 
 class Inventory

@@ -125,6 +125,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DATA.CPP" />
+    <ClCompile Include="src\data.cpp" />
     <ClCompile Include="src\core.cpp" />
     <ClCompile Include="src\inventorycell.cpp" />
     <ClCompile Include="src\inventory.cpp" />
@@ -133,6 +135,7 @@
     <ClCompile Include="src\item\symcard.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\data.h" />
     <ClInclude Include="src\constants.h" />
     <ClInclude Include="src\core.h" />
     <ClInclude Include="src\inventoryadditemerror.h" />

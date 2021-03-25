@@ -1,18 +1,20 @@
 #pragma once
 
-#include "inventory.h"
+#include "data.h"
 
 #include <memory>
+
 
 class Core
 {
 public:
 	Core();
 
-	Inventory * getInventory() const;
+	Data * getData() const;
 
 private:
-	std::unique_ptr<Inventory> m_inventory;
+	std::unique_ptr<Data> m_data;
+
 };
 
 extern std::unique_ptr<Core> core;

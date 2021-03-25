@@ -10,9 +10,9 @@ bool InventoryCell::add(const std::unique_ptr<Item> &item, int count)
 {
 	if (item && !m_item)
 	{
-		std::unique_ptr<Item> curret_item = item->clone();
+		std::unique_ptr<Item> current_item = item->clone();
 
-		m_item = std::move(curret_item);
+		m_item = std::move(current_item);
 		m_count = count;
 
 		return 1;

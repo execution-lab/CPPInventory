@@ -4,10 +4,10 @@ std::unique_ptr<Core> core;
 
 Core::Core()
 {
-	m_inventory = std::make_unique<Inventory>();
+	m_data = std::make_unique<Data>();
 }
 
-Inventory * Core::getInventory() const
+Data * Core::getData() const
 {
-	return m_inventory.get();
+	return m_data.get();
 }
