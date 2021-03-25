@@ -8,7 +8,6 @@
     <ClCompile Include="src\inventorycell.cpp" />
     <ClCompile Include="src\core.cpp" />
     <ClCompile Include="src\data.cpp" />
-    <ClCompile Include="DATA.CPP" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\item\item.h" />

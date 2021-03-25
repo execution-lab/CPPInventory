@@ -125,7 +125,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DATA.CPP" />
     <ClCompile Include="src\data.cpp" />
     <ClCompile Include="src\core.cpp" />
     <ClCompile Include="src\inventorycell.cpp" />

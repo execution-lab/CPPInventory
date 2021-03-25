@@ -11,7 +11,7 @@ class Item
 {
 public:
 	Item() { }
-	Item(std::string name, ItemType itemType, float weight, 
+	explicit Item(std::string name, ItemType itemType, float weight, 
 		 bool isCombination, int limit);
 
 	virtual ~Item() {}

@@ -15,7 +15,7 @@ int main()
 	setlocale(LC_ALL, "Russian");
 
 	core = std::make_unique<Core>();
-
+	
 	std::unique_ptr<Item> item = std::make_unique<Items::Symcard>();
 	
 	market[0] = std::move(item);
